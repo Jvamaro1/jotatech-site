@@ -1,1 +1,0 @@
-# jotatech-site

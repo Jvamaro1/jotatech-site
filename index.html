@@ -4,87 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jota Technology | Excelência em Infraestrutura e Suporte Gerenciado</title>
-    </head>
+    
+    <link rel="stylesheet" href="css/style.css"> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
 <body>
 
     <header>
         <div class="container">
-            <div class="logo">
-                <h1>Jota Technology</h1>
-                </div>
+            <a href="#" class="logo">Jota Technology</a>
             <nav>
-                <ul>
-                    <li><a href="#about">A Jota Technology</a></li>
-                    <li class="dropdown">
-                        <a href="#servicos">Serviços</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#infraestrutura">Infraestrutura e Data Center</a></li>
-                            <li><a href="#suporte">Suporte e Gestão Contratual</a></li>
-                            <li><a href="#network">Redes e Conectividade</a></li>
-                            <li><a href="#seguranca">Segurança Cibernética</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#cases">Cases de Sucesso</a></li>
-                    <li><a href="#contato" class="btn-cta">Solicitar Proposta</a></li>
+                <button id="menu-toggle" aria-label="Abrir menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#about">A Empresa</a></li>
+                    <li><a href="#servicos">Soluções</a></li>
+                    <li><a href="#contato" class="btn btn-cta">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section id="hero" class="hero-section">
+        <section id="hero">
             <div class="container">
-                <h1>Sua infraestrutura em **alta performance** e segura.</h1>
-                <p>Fornecemos soluções tecnológicas robustas e contratos de serviço (SLA) que asseguram a continuidade das operações críticas de sua empresa.</p>
+                <h1>Tecnologia e Infraestrutura para Negócios de Alta Performance</h1>
+                <p>Garantimos a continuidade e a segurança das suas operações críticas com soluções de TI robustas e suporte especializado.</p>
                 <a href="#contato" class="btn btn-primary">Fale com um Especialista</a>
             </div>
         </section>
 
-        <section id="credibilidade" class="credibility-section">
+        <section id="credibilidade">
+    <div class="container">
+        <h2 class="section-subtitle">Confiado por empresas líderes do mercado</h2>
+
+        <div class="logos-clientes">
+            <img src="img/logo-viver.png" alt="Viver Incorporadora">
+            <img src="img/logo-solv.png" alt="Solv Holding">
+        </div>
+    </div>
+</section>
+
+        <section id="about">
             <div class="container">
-                <h2>Confiança Atestada por Grandes Corporações</h2>
-                <div class="logos-clientes">
-                    <img src="img/logo-viver.png" alt="Logo Viver Incorporadora">
-                    <img src="img/logo-solv.png" alt="Logo Solv Holding">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Equipe Jota Technology em reunião">
+                    </div>
+                    <div class="about-content">
+                        <span class="section-tag">Nossa Missão</span>
+                        <h2>Transformar TI em Ativo Estratégico para o seu Negócio</h2>
+                        <p>Na Jota Technology, operamos com uma metodologia formal e disciplinada. Nosso foco é prover soluções robustas que garantem a estabilidade da sua infraestrutura e a continuidade das suas operações, permitindo que você foque nos seus objetivos estratégicos.</p>
+                        <a href="#servicos" class="btn btn-secondary">Conheça Nossas Soluções</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="about-section">
-            <div class="container">
-                <h2>A Jota Technology</h2>
-                <p>Nossa missão é prover soluções de Tecnologia da Informação robustas e gerenciais, com foco primordial na estabilidade da infraestrutura...</p>
-                <a href="#" class="btn btn-secondary">Detalhar Valores</a>
-            </div>
-        </section>
+        <section id="servicos">
+    <div class="container">
+        <span class="section-tag">Nossas Soluções</span>
+        <h2>Um Portfólio Completo para sua Empresa</h2>
+        <div class="services-grid">
 
-        <section id="servicos" class="services-section">
-            <div class="container">
-                <h2>Nossas Soluções</h2>
-                <div class="service-card">
-                    <h3>Infraestrutura e Data Center</h3>
-                    <p>Desenvolvemos e implementamos a base física e lógica de TI, com foco na **resiliência** e segurança. Certificação, Elétrica, Data Center.</p>
-                    <a href="#infraestrutura">Saiba Mais</a>
-                </div>
-                <div class="service-card">
-                    <h3>Suporte e Gestão Contratual</h3>
-                    <p>Garantimos a continuidade com **SLAs** rigorosos, manutenção proativa e gestão de ativos de TI. Alocação e Atendimento Especializado.</p>
-                    <a href="#suporte">Saiba Mais</a>
-                </div>
-                <div class="service-card">
-                    <h3>Segurança Cibernética</h3>
-                    <p>Proteção intrínseca à sua infraestrutura. Defesa de Borda (Firewall), Proteção de Endpoints e planos de **Recuperação de Desastres (DR)**.</p>
-                    <a href="#seguranca">Saiba Mais</a>
-                </div>
+            <div class="service-card">
+                <i class="fa-solid fa-server"></i>
+                <h3>Infraestrutura e Data Center</h3>
+                <ul class="card-service-list">
+                    <li>Cabeamento Estruturado</li>
+                    <li>Projetos de Energia Elétrica</li>
+                    <li>Instalações e Dimensionamentos</li>
+                    <li>Video Monitoramento e Controle de Acesso</li>
+                </ul>
             </div>
-        </section>
 
-        <section id="contato" class="contact-section">
+            <div class="service-card">
+                <i class="fa-solid fa-headset"></i>
+                <h3>Suporte e Gestão Contratual</h3>
+                 <ul class="card-service-list">
+                    <li>Contratos de Suporte com SLA</li>
+                    <li>Serviços Avulsos e Profissionais</li>
+                    <li>Manutenção Preventiva</li>
+                    <li>Gerenciamento de Projetos de TI</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>Segurança Cibernética</h3>
+                <ul class="card-service-list">
+                    <li>Firewall (Next Generation)</li>
+                    <li>Proteção de Endpoints (Antivírus/EDR)</li>
+                    <li>Gestão de Acesso (UTM)</li>
+                    <li>Estratégias de Backup e VDI</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <i class="fa-solid fa-wifi"></i>
+                <h3>Redes e Conectividade</h3>
+                <ul class="card-service-list">
+                    <li>Soluções em Cloud Computing</li>
+                    <li>Comunicações Unificadas (VoIP/Vídeo)</li>
+                    <li>Exchange Online e Sharepoint</li>
+                    <li>Reestruturação de Redes</li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+        <section id="contato">
             <div class="container">
-                <h2>Fale Conosco: Solicite uma Proposta Técnica</h2>
-                <p>Preencha o formulário para iniciar o processo. Asseguramos total confidencialidade e um tempo de resposta alinhado aos nossos padrões de excelência.</p>
+                <span class="section-tag">Fale Conosco</span>
+                <h2>Solicite uma Proposta Técnica</h2>
+                <p>Nossa equipe de especialistas está pronta para analisar suas necessidades e propor a melhor solução.</p>
                 <form action="#" method="POST" class="proposta-form">
-                    <button type="submit" class="btn btn-primary">SOLICITAR PROPOSTA</button>
+                    <div class="form-grid">
+                        <div class="form-group"><input type="text" name="nome" placeholder="Nome Completo *" required></div>
+                        <div class="form-group"><input type="email" name="email" placeholder="E-mail Corporativo *" required></div>
+                        <div class="form-group"><input type="text" name="empresa" placeholder="Nome da Empresa *" required></div>
+                        <div class="form-group">
+                            <select name="assunto" required>
+                                <option value="">Selecione um Assunto *</option>
+                                <option value="suporte-sla">Suporte e Contrato SLA</option>
+                                <option value="infra-data-center">Projeto de Infraestrutura</option>
+                                <option value="seguranca">Segurança Cibernética</option>
+                                <option value="geral">Consulta Geral</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width"><textarea name="mensagem" placeholder="Mensagem / Descreva sua necessidade" rows="5"></textarea></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Solicitação</button>
                 </form>
             </div>
         </section>
@@ -92,12 +148,10 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Jota Technology. Todos os direitos reservados. | Privacidade | Termos de Serviço</p>
-            <div class="contatos-rapidos">
-                <p>Comercial: (XX) XXXX-XXXX | E-mail: comercial@jotatechnology.com.br</p>
-                </div>
+            <p>&copy; 2025 Jota Technology. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    </body>
+    <script src="js/script.js"></script>
+</body>
 </html>
